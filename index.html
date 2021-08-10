@@ -1,31 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Project-Landing-Page</title>
-</head>
-<body>
-    <div class="navCon">
+  </head>
+  <body>
+    <div class="section_1" id="#home">
+      <div class="navCon">
         <header>
-            <nav>
-                <div class="logo">FIGMA LAND</div>
-                <ul>
-                    <li>Home</li>
-                    <li>Product</li>
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-                <form class="emailCon">
-                    <input type='text' placeholder="Your Email"/>
-                    <button type="submit">Subsribe</button>
-                </form>
-            </nav>
+          <nav>
+            <div class="logo">
+                <img src="./media/logo_dark.png" alt="">
+            </div>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <form class="emailCon" onsubmit="handle_submit(event)">
+              <input type="text" placeholder="Your Email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </nav>
         </header>
+      </div>
+      <div class="sub_section_1">
+        <div class="img_con_1">
+            <img src="./media/screen_content_1.png" alt="">
+        </div>
+        <div class="content_con_1">
+          <h1>We focus on</h1>
+          <h1>ergonomics</h1>
+          <p>Most calendars are designed for teams.</p>
+          <p>State is designed for freelancers</p>
+          <button>Try For Free</button>
+        </div>
+      </div>
+    </div>
+    <div class="section_2">
+        <div class="content_con_2" id="products">
+            <p>At your fingertips</p>
+            <h1>Features</h1>
+            <p>Most calendars are designed for teams.</p>
+            <p>Slate is designed for freelancers</p>
+        </div>
+        <div class="content_con_3">
+            <div class="card_1">
+                <div class="card_sub_1">
+                    <div class="img_con_2">
+                        <img src="./media/icon_1.png" alt="">
+                    </div>
+                    <h1>The best products</h1>
+                    <h1>start with Sketch</h1>
+                </div>
+                <p>Slate helps you see how many</p>
+                <p>more days you need to work to</p>
+                <p>reach your financial goal.</p>
+            </div>
+            <div class="card_1">
+                <div class="card_sub_1">
+                    <div class="img_con_2">
+                        <img src="./media/icon_2.png" alt="">
+                    </div>
+                    <h1>Fastest way to</h1>
+                    <h1>organize</h1>
+                </div>
+                <p>Slate helps you see how many</p>
+                <p>more days you need to work to</p>
+                <p>reach your financial goal.</p>
+            </div>
+            <div class="card_1">
+                <div class="card_sub_1">
+                    <div class="img_con_2">
+                        <img src="./media/icon_3.png" alt="">
+                    </div>
+                    <h1>Work better</h1>
+                    <h1>together</h1>
+                </div>
+                <p>Slate helps you see how many</p>
+                <p>more days you need to work to</p>
+                <p>reach your financial goal.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section_3">
+        <div class="sub_section_2">
+            <h1>Lightning fast</h1>
+            <h1>prototyping</h1>
+            <p>Most calendars are designed for teams.</p>
+            <p>Slate is designed for freelancers</p>
+        </div>
+        <div class="sub_section_3">
+            <button>Try For Free</button>
+        </div>
+        <div class="sub_section_4">
+            <div class="img_con_3">
+                <img src="./media/Macbook_Pro.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section_4">
+        <div class="sub_section_4">
+            <p>At your fingertips</p>
+            <h1>Lightning fast prototyping</h1>
+        </div>
+        <div class="sub_section_5">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Available exclusivery on Figmaland</p>
+            <form onsubmit="handle_submit(event)">
+                <input type="text" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="section_5">
+        <div class="sub_section_6">
+            <h1>Partners</h1>
+            <p>Most calendars are designed for teams.</p>
+            <p>Slate is designed for freelancers</p>
+        </div>
+        <div class="sub_section_7">
+            <div class="content_con_4">
+                <div class="card_2">
+                    <h1>Client Name</h1>
+                    <div class="img_con_4">
+                        <img src="./media/icon_4.png" alt="">
+                    </div>
+                    <p>State helps you see how</p>
+                    <p>many more days you need</p>
+                    <p>to work to reach your</p>
+                    <p>financial goal for</p>
+                    <p>the month and year.</p>
+                </div>
+                <div class="card_2">
+                    <h1>Client Name</h1>
+                    <div class="img_con_4">
+                        <img src="./media/icon_5.png" alt="">
+                    </div>
+                    <p>State helps you see how</p>
+                    <p>many more days you need</p>
+                    <p>to work to reach your</p>
+                    <p>financial goal for</p>
+                    <p>the month and year.</p>
+                </div>
+                <div class="card_2">
+                    <h1>Client Name</h1>
+                    <div class="img_con_4">
+                        <img src="./media/icon_6.png" alt="">
+                    </div>
+                    <p>State helps you see how</p>
+                    <p>many more days you need</p>
+                    <p>to work to reach your</p>
+                    <p>financial goal for</p>
+                    <p>the month and year.</p>
+                </div>
+            </div>
+            <div class="content_con_4">
+                <div class="card_2">
+                    <h1>Client Name</h1>
+                    <div class="img_con_4">
+                        <img src="./media/icon_7.png" alt="">
+                    </div>
+                    <p>State helps you see how</p>
+                    <p>many more days you need</p>
+                    <p>to work to reach your</p>
+                    <p>financial goal for</p>
+                    <p>the month and year.</p>
+                </div>
+                <div class="card_2">
+                    <h1>Client Name</h1>
+                    <div class="img_con_4">
+                        <img src="./media/icon_8.png" alt="">
+                    </div>
+                    <p>State helps you see how</p>
+                    <p>many more days you need</p>
+                    <p>to work to reach your</p>
+                    <p>financial goal for</p>
+                    <p>the month and year.</p>
+                </div>
+                <div class="card_2">
+                    <h1>Client Name</h1>
+                    <div class="img_con_4">
+                        <img src="./media/icon_9.png" alt="">
+                    </div>
+                    <p>State helps you see how</p>
+                    <p>many more days you need</p>
+                    <p>to work to reach your</p>
+                    <p>financial goal for</p>
+                    <p>the month and year.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub_section_8">
+            <button>Try For Free</button>
+        </div>
+    </div>
+    <div class="section_6">
+        <div class="sub_section_9">
+            <h1>Testimonials</h1>
+        </div>
+        <div class="sub_section_10">
+            <div class="img_con_5">
+                <img src="./media/icon_10.png" alt="">
+            </div>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple</p>
+            <p>way to plan their schedule.</p>
+            <div class="content_con_5">
+                <div class="img_con_6">
+                    <img src="./media/icon_11.png" alt="">
+                </div>
+                <div class="content_sub_con_1">
+                    <h1>Organize across</h1>
+                    <p>UI designer</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub_section_11">
+            <button>More Testimonials</button>
+        </div>
+    </div>
+    <div class="section_7" id="pricing">
+        <div class="sub_section_12">
+            <h1>Pricing</h1>
+            <p>Most calendars are designed for teams.</p>
+            <p>Slate is designed for freelancers</p>
+        </div>
+        <div class="sub_section_13">
+            <div class="content_con_6">
+                <div class="card_3">
+                    <h1>Free</h1>
+                    <p>Organize across all apps by hand</p>
+                    <div class="content_sub_con_2">
+                        <h1>0</h1>
+                        <div class="content_sub_sub_con_1">
+                            <h1>$</h1>
+                            <p>Per Month</p>
+                        </div>
+                    </div>
+                    <button>Order Now</button>
+                </div>
+                <div class="card_3">
+                    <h1>STANDARD</h1>
+                    <p>Organize across all apps by hand</p>
+                    <div class="content_sub_con_2">
+                        <h1>10</h1>
+                        <div class="content_sub_sub_con_1">
+                            <h1>$</h1>
+                            <p>Per Month</p>
+                        </div>
+                    </div>
+                    <button>Order Now</button>
+                </div>
+                <div class="card_3">
+                    <h1>BUSINESS</h1>
+                    <p>Organize across all apps by hand</p>
+                    <div class="content_sub_con_2">
+                        <h1>99</h1>
+                        <div class="content_sub_sub_con_1">
+                            <h1>$</h1>
+                            <p>Per Month</p>
+                        </div>
+                    </div>
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section_8" id="contact">
+        <div class="sub_section_14">
+            <h1>Contact Us</h1>
+            <p>Most calendars are designed for teams.</p>
+            <p>Slate is designed for freelancers</p>
+        </div>
+        <div class="sub_section_15">
+            <div class="content_con_7">
+                <form onsubmit="handle_submit(event)">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Email">
+                    <textarea></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="content_con_8">
+                <div class="content_sub_con_3">
+                    <div class="img_con_7">
+                        <img src="./media/svgs/icon_1.svg" alt="">
+                    </div>
+                    <div class="content_sub_sub_con_2">
+                        <p>6386 Spring St undefined Anchorage,</p>
+                        <p>Georgia 12473 United States</p>
+                    </div>                    
+                </div>
+                <div class="content_sub_con_3">
+                    <div class="img_con_7">
+                        <img src="./media/svgs/icon_2.svg" alt="">
+                    </div>
+                    <div class="content_sub_sub_con_2">
+                        <p>(843) 555-0130</p>
+                    </div>                    
+                </div>
+                <div class="content_sub_con_3">
+                    <div class="img_con_7">
+                        <img src="./media/svgs/icon_3.svg" alt="">
+                    </div>
+                    <div class="content_sub_sub_con_2">
+                        <p>willie.jennings@example.com</p>
+                    </div>                    
+                </div>
+                <div class="content_sub_con_4">
+                    <div class="img_con_8">
+                        <img src="./media/svgs/icon_4.svg" alt="">
+                        <img src="./media/svgs/icon_5.svg" alt="">
+                        <img src="./media/svgs/icon_6.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section_9" id="about">
+        <div class="sub_section_16">
+            <h1>Pages</h1>
+            <p>Eleanor Edwards</p>
+            <p>Ted Robertson</p>
+            <p>Annette Russell</p>
+            <p>Jennie Mckinney</p>
+            <p>Gloria Richards</p>
+        </div>
+        <div class="sub_section_17">
+            <div class="img_con_9">
+                <img src="./media/map_img.png" alt="">
+            </div>
+        </div>
+        <div class="sub_section_18">
+            <div class="content_sub_con_5">
+                <div class="img_con_8">
+                    <img src="./media/svgs/icon_1.svg" alt="">
+                </div>
+                <div class="content_sub_sub_con_3">
+                    <p>6386 Spring St undefined Anchorage,</p>
+                    <p>Georgia 12473 United States</p>
+                </div>                    
+            </div>
+            <div class="content_sub_con_5">
+                <div class="img_con_8">
+                    <img src="./media/svgs/icon_2.svg" alt="">
+                </div>
+                <div class="content_sub_sub_con_2">
+                    <p>(843) 555-0130</p>
+                </div>                    
+            </div>
+            <div class="content_sub_con_5">
+                <div class="img_con_8">
+                    <img src="./media/svgs/icon_3.svg" alt="">
+                </div>
+                <div class="content_sub_sub_con_2">
+                    <p>willie.jennings@example.com</p>
+                </div>                    
+            </div>
+            <div class="content_sub_con_6">
+                <div class="img_con_10">
+                    <img src="./media/svgs/icon_4.svg" alt="">
+                    <img src="./media/svgs/icon_5.svg" alt="">
+                    <img src="./media/svgs/icon_6.svg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

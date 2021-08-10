@@ -1,0 +1,1 @@
+const handle_submit = (event) => event.preventDefault();
