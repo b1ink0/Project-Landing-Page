@@ -3,6 +3,9 @@
   --pink: #ef2779;
   --light_gray: #e2e3e5;
   --sky_blue: #38a3f1;
+  --black: #000000;
+  --gray: #9FA2A5;
+  --gray_dark: #D8D8D8;
 }
 * {
   margin: 0;
@@ -220,4 +223,92 @@ body {
 .section_2 .content_con_3 .card_1 p{
   font-size: 15px;
   line-height: 27px;
+}
+.section_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.section_3 .sub_section_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section_3 .sub_section_2 h1{
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 57px;
+}
+.section_3 .sub_section_2 h1:nth-child(2){
+  margin-bottom: 40px;
+}
+.section_3 .sub_section_2 p{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+}
+.section_3 .sub_section_3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.section_3 .sub_section_3 button{
+  outline: none;
+  color: var(--white);
+  border: none;
+  background: var(--sky_blue);
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.section_3 .sub_section_4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.section_3 .sub_section_4 .img_con_3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section_3 .sub_section_4 .img_con_3 .macbook_1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 840px;
+  height: 570px;
+  padding-bottom: 35px;
+  background: var(--black);
+  border: 10px solid var(--gray);
+  border-radius: 25px 25px 0 0;
+  border-bottom: none;
+} 
+.section_3 .sub_section_4 .img_con_3 .macbook_2{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 1020px;
+  height: 20px;
+  background: var(--gray_dark);
+  margin-top: -20px;
+}
+.section_3 .sub_section_4 .img_con_3 .macbook_2 .macbook_sub_1{
+  width: 140px;
+  height: 13px;
+  background: var(--gray);
+  border-radius: 0 0 30px 30px;
+}
+.section_3 .sub_section_4 .img_con_3 .macbook_3{
+  width: 1020px;
+  height: 12px;
+  background: var(--gray);
+  border-radius: 0 0 25px 25px;
 }
