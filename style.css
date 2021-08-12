@@ -48,33 +48,39 @@ button {
   top: 50px;
 }
 .nav_con {
-  width: 100%;
+  width: 98vw;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav_con header {
-  width: 100%;
+  width: 98vw;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav_con header nav {
-  width: 100%;
+  width: 96vw;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .nav_con header nav .logo {
-  margin-left: 25px;
-  margin-right: 10%;
+  margin-left: 0px;
+  margin-right: 0%;
 }
 .nav_con header nav ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin-left: 50px;
-  width: 100%;
+  width: 35vw;
 }
 .nav_con header nav li {
   width: 100px;
+  padding: 5px;
 }
 .nav_con header nav a {
   text-decoration: none;
@@ -86,14 +92,13 @@ button {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-right: 30px;
 }
 .nav_con header nav form input {
   outline: none;
   background: var(--white);
   border: none;
   height: 40px;
-  width: 200px;
+  width: 16vw;
   padding: 0 25px 0 25px;
   border-radius: 25px;
   margin-right: 10px;
@@ -111,12 +116,13 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 5vw;
+  width: 98vw;
 }
 .img_con_1 {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 55vw;
   margin-top: 25px;
   background: white;
   border-radius: 0 4px 0 0;
@@ -143,12 +149,13 @@ button {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding-right: 130px;
+  padding-right: 2vw;
+  padding-left: 2vw;
 }
 .content_con_1 h1 {
   color: var(--white);
-  font-size: 55px;
-  line-height: 65px;
+  font-size: 50px;
+  line-height: 55px;
 }
 .content_con_1 h4 {
   color: var(--white);
@@ -174,7 +181,8 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 15vw;
+  width: 98vw;
 }
 .content_con_2 {
   display: flex;
@@ -202,6 +210,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  width: 95vw;
 }
 .content_con_3 .card_1 {
   display: flex;
@@ -324,7 +333,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 98vw;
   height: 500px;
   background: linear-gradient(39.97deg, #ef2779 0.79%, #7834be 79.29%);
   margin-top: 100px;
@@ -400,6 +409,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 98vw;
 }
 .sub_section_7 h1 {
   font-weight: normal;
@@ -562,16 +572,20 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 95vw;
 }
 .content_con_6 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  width: 95vw;
 }
 .card_3 {
   width: 335px;
   height: 310px;
+  /* width: 30vw; */
+  /* height: 32vw; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -579,8 +593,8 @@ button {
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   border: 1px solid var(--light_gray);
-  margin: 25px;
-  padding: 40px;
+  margin: 1.25vw;
+  padding: 3vw;
 }
 .card_3 h1 {
   font-weight: bold;
@@ -622,8 +636,10 @@ button {
 }
 .card_3 button {
   outline: none;
-  width: 250px;
+  width: 100%;
   height: 40px;
+  /* width: 22.6vw; */
+  /* height: 4vw; */
   border-radius: 25px;
   border: none;
   font-weight: 700;
@@ -794,6 +810,10 @@ button {
   line-height: 27px;
   margin-top: 20px;
 }
+.img_con_9 img {
+  width: 55vw;
+  padding: 1vw;
+}
 .sub_section_19 {
   display: flex;
   justify-content: center;
@@ -829,4 +849,9 @@ button {
 .img_con_11 img {
   margin: 15px;
   cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  .img_con_3 {
+    transform: scale(0.7);
+  }
 }
