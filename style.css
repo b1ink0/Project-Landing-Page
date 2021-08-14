@@ -80,6 +80,8 @@ button {
 .nav_con header nav .logo {
   margin-left: 0px;
   margin-right: 0%;
+  position: absolute;
+  top: -5px;
 }
 .nav_con header nav ul {
   display: flex;
@@ -133,6 +135,9 @@ button {
   height: 40px;
   margin-right: 10px;
   display: none;
+  position: fixed;
+  top: 10px;
+  right: 5px;
 }
 .burger button {
   outline: none;
@@ -148,13 +153,19 @@ button {
 .burger button span {
   width: 40px;
   height: 3px;
-  background: rgb(255, 255, 255);
+  transition: all 0.5s;
 }
 .burger button span:nth-child(2) {
   width: 27px;
 }
 .burger button span:nth-child(3) {
   width: 13.5px;
+}
+.burger_span_white {
+  background: var(--white);
+}
+.burger_span_dark {
+  background: var(--dark_blue);
 }
 .sub_section_1 {
   display: flex;
@@ -407,7 +418,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 98vw;
+  width: 100vw;
   height: 500px;
   background: linear-gradient(39.97deg, #ef2779 0.79%, #7834be 79.29%);
   margin-top: 100px;
@@ -963,7 +974,7 @@ button {
     height: 100%;
     background: var(--white);
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: fixed;
     left: 100%;
@@ -1002,6 +1013,7 @@ button {
     background: var(--sky_blue);
     border-radius: 25px;
     padding: 0;
+    margin: 25px 0 25px 0;
   }
   .nav_con header nav ul li a {
     display: flex;
