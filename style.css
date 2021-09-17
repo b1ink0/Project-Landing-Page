@@ -18,6 +18,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+  transition: all 0.3s;
 }
 input::placeholder,
 textarea::placeholder {
@@ -207,11 +208,11 @@ button {
   background: var(--light_gray);
   border-radius: 0px 4px 0 0;
 }
-.img_con_1 div span {
-  width: 680px;
+.img_con_1 div span:nth-child(4) {
+  width: 95%;
   height: 15px;
   background: var(--white);
-  border-radius: 4px;
+  border-radius: 25px;
 }
 .content_con_1 {
   display: flex;
@@ -994,7 +995,7 @@ button {
   }
   .logo {
     position: absolute;
-    top: -5px;
+    top: 20px;
   }
   .nav_con header nav ul {
     width: 100vw;
@@ -1035,18 +1036,20 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 130px;
     height: 50px;
-    background: var(--sky_blue);
-    border-radius: 25px;
     padding: 0;
     margin: 25px 0 25px 0;
+    border-bottom: 0px solid var(--sky_blue);
+  }
+  .nav_con header nav ul li:hover {
+    border-bottom: 5px solid var(--sky_blue);
   }
   .nav_con header nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white);
+    color: var(--black);
     text-align: center;
     font-size: 25px;
     font-weight: bold;
@@ -1119,7 +1122,6 @@ button {
     background: var(--gray_1);
   }
   .img_con_1 div span:nth-child(4) {
-    border-radius: 0;
     width: 80%;
     height: 15px;
     background: var(--white);
