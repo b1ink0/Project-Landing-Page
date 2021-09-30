@@ -60,3 +60,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 sections.forEach((section) => {
   observer.observe(section);
 });
+
+AOS.init({
+  duration: 1000,
+});
